@@ -1,0 +1,220 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-container {
+    width: 500px;
+    margin-left: 50px;
+}
+.left-container label {
+    font-size: 16px;
+    color: rgb(116, 113, 113);
+}
+
+.right-container {
+    width: 400px;
+    background-color: #EEEEEE;
+    height: 475px;
+    margin-right: 60px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.input-container {
+    padding: 10px 0px;
+}
+.input-container i{
+    position: relative;
+    left: -440px;
+    color: #978d8d;
+
+
+}
+
+.left-container input {
+    width: 400px;
+    height: 30px;
+    padding-left: 40px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    
+}
+
+
+
+.inline-block {
+    display: inline-block;
+}
+
+.country {
+    width: 170px;
+}
+
+.postcode{
+    display: inline-block;
+    width: 290px;
+}
+
+.country select {
+    width: 140px;
+    height: 34px;
+    padding-left: 40px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    color: rgb(116, 113, 113);    
+}
+.country i {
+    position: relative;
+    left: 30px;
+    /* top: 3px;   */
+}
+
+.postcode input {
+    width:200px;
+}
+.postcode i {
+    left: -240px;
+
+}
+
+#information {
+    width: auto;
+    position: relative;
+    top: 8px;
+}
+
+.button1 button {
+    float: right;
+    background-color: #F2994A;
+    color: #ffffff;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.boxes {
+    height: 175px;
+}
+
+#image1,
+#image2 {
+    float: left;
+    width: 125px;
+    margin:0px 20px;
+    border-radius: 8px;
+}
+
+.margin-left {
+    margin-left: 195px;
+    padding-top: 3px;
+}
+
+.orange {
+    color: #F2994A;
+    font-weight: bolder;
+}
+
+#myform {
+    text-align: left;
+    padding: 5px;
+    margin: 2%;
+}
+.qty {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: #EEEEEE;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+input.qtyplus { 
+    width:25px; height:25px;
+    position: relative;
+    right: 35px;
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+}
+input.qtyminus { 
+    width:25px; height:25px;
+    position: relative;
+    left: 35px;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px 0px 20px;
+    /* border-top: 1px solid black; */
+}
+.cost span {
+    text-align: right;
+}
+
+@media (max-width: 950px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right-container {
+        margin: auto;
+    }
+    .left-container {
+        margin: auto;
+        position: relative;
+        left: 50px;
+    }
+}
+
+@media (max-width: 510px) {
+    .left-container {
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        /* margin-left: 20px; */
+    }
+    .right-container {
+        width: 100%;
+    }
+    .left-container input {
+        width: 235px; 
+    }
+
+    .qty {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        background-color: #EEEEEE;
+        border: 1px solid gray;
+        border-radius: 5px;
+        
+    }
+
+    .button1 button {
+        position: relative;
+        right: 17vw;
+    }
+}
